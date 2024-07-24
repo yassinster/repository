@@ -1,0 +1,34 @@
+h1 {
+    color:black;
+    font-size: 56px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to green on hover */
+  li a:hover {
+    background-color: rgb(43, 177, 50);
+  }
+body {background-color: red;
+}
+img {
+    height: 700px;
+    width: 1423px;
+}
