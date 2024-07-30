@@ -1,0 +1,36 @@
+h1 {
+    color:black;
+    font-size: 56px;
+}
+ul {
+    list-style-type: none;
+    margin: 0 auto 0 auto;
+    padding: 0 auto 0 auto;
+    overflow: hidden;
+    background-color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to green on hover */
+  li a:hover {
+    background-color: rgb(43, 177, 50);
+  }
+body {background-color: red;
+}
+img {
+    height: 700px;
+    width: 1423px;
+}
