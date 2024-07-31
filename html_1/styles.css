@@ -2,15 +2,30 @@ h1 {
     color:black;
     font-size: 56px;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+}
 ul {
     list-style-type: none;
-    margin: 0 auto 0 auto;
-    padding: 0 auto 0 auto;
+    margin: 0px;
+    padding: 0px;
     overflow: hidden;
     background-color: rgb(36, 110, 21);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: monospace;
     font-size: x-large;
-  }
+    width: 100%;
+    right: 0;
+    left: 0;
+
+ }
+ nav{
+    margin: 0;
+    width: 100;
+    right: 0;
+    left: 0;
+
+ }
   
 li {
     float: left;
@@ -28,9 +43,23 @@ li a {
 li a:hover {
     background-color: rgb(43, 177, 50);
 }
-body {background-color: red;
+body {
+    background-color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 img {
     height: 700px;
     width: 1424px;
+    margin: 0 auto; /* Center horizontally */
+    padding: 0;
+    display: block; /* Ensures the margin auto works */
+}
+h1 {
+    margin-left: 20px;
+    font-family: monospace;
+}
+h2 {
+    margin-left: 20px;
+    font-family: monospace;
 }
