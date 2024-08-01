@@ -17,6 +17,11 @@ ul {
     width: 100%;
     right: 0;
     left: 0;
+    display: flex;            /* Use flexbox */
+    justify-content: center;  /* Center the items */
+    align-items: center;      /* Center items vertically */
+    height: 100%;             /* Ensure the height of ul matches nav */
+    width: 100%;
 
  }
  nav{
@@ -62,4 +67,11 @@ h1 {
 h2 {
     margin-left: 20px;
     font-family: monospace;
+}
+main {
+    margin-left: 20px;
+}
+nav img {
+    height: 40px;  /* Adjust the size to match your original text size */
+    width: 40px;   /* Maintain aspect ratio, adjust if needed */
 }
