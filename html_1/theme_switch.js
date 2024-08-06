@@ -1,23 +1,24 @@
 alert("Welcome to the page");
+
+let firstname = 'yassin';
+console.log(firstname);
+
 document.addEventListener("DOMContentLoaded", function() {
-    const toggleSwitch = document.getElementById('mode-toggle');
-    const currentTheme = localStorage.getItem('theme');
+    const modal = document.getElementById("modal");
+    const signUpLogInBtn = document.getElementById("signUpLogInBtn");
+    const closeBtn = document.getElementsByClassName("close-btn")[0];
 
-    if (currentTheme) {
-        document.documentElement.setAttribute('data-theme', currentTheme);
-
-        if (currentTheme === 'dark') {
-            toggleSwitch.checked = true;
-        }
+    signUpLogInBtn.onclick = function() {
+        modal.style.display = "block";
     }
 
-    toggleSwitch.addEventListener('change', function (event) {
-        if (event.target.checked) {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            localStorage.setItem('theme', 'dark');
-        } else {
-            document.documentElement.setAttribute('data-theme', 'light');
-            localStorage.setItem('theme', 'light');
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
         }
-    });
+    }
 });
