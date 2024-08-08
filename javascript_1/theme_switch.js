@@ -3,10 +3,10 @@
 let firstname = 'yassin';
 console.log(firstname);
 
-let firstFlashcard = 50;
-let secondFlashcard = 74;
-let addTotalFlashcards = firstFlashcard + secondFlashcard;
-console.log(`${addTotalFlashcards}`)
+let firstNumber = 50;
+let secondNumber = 74;
+let addTotalSum = firstNumber + secondNumber;
+console.log("124")
 
 document.getElementById('add-flashcard').addEventListener('click', function() {
     // Get the input values
@@ -49,31 +49,5 @@ document.getElementById('add-flashcard').addEventListener('click', function() {
 document.querySelectorAll('.flashcard').forEach(flashcard => {
     flashcard.addEventListener('click', function() {
         flashcard.classList.toggle('flipped');
-    });
-});
-
-
-
-/* Theme toggle switch */
-document.addEventListener("DOMContentLoaded", function() {
-    const toggleSwitch = document.getElementById('mode-toggle');
-    const body = document.body;
-
-    // Initialize the theme based on saved preference or default to light mode
-    const savedTheme = localStorage.getItem('theme') || 'dark-mode';
-    body.classList.add(savedTheme);
-    toggleSwitch.checked = savedTheme === 'dark-mode';
-
-    // Event listener for the toggle switch
-    toggleSwitch.addEventListener('change', function() {
-        if (this.checked) {
-            body.classList.remove('light-mode');
-            body.classList.add('dark-mode');
-            localStorage.setItem('theme', 'dark-mode');
-        } else {
-            body.classList.remove('dark-mode');
-            body.classList.add('light-mode');
-            localStorage.setItem('theme', 'light-mode');
-        }
     });
 });

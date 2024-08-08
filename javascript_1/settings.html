@@ -6,7 +6,7 @@
     <title>Studyological/Settings</title>
     <link rel="stylesheet" href="styles.css"></link>
 </head>
-<body class="bodytheme dark-mode">
+<body>
     <ul>
         <li><a href="index.html"><img src="home-icon.png" alt="Home" class="home-icon"></a></li>
         <li><a href="flashcards.html">Flashcards</a></li>
@@ -18,9 +18,10 @@
     </ul>
     <main>
     <h1>Settings</h1>
-    <button class="mode-toggle" id="mode-toggle">
-        <span class="slider round">☀️</span>
-    </button>
+    <label class="switch" id="switch">
+        <input type="checkbox" id="mode-toggle">
+        <span class="slider round"></span>
+    </label>
     </main>
     <script src="theme_switch.js"></script>
 </body>

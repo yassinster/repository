@@ -112,38 +112,3 @@ main {
 .flashcard.flipped .back {
     transform: rotateY(0);
 }
-
-/* Theme switch */
-body {
-    background-color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.dark-mode {
-    background-color: black;
-    color: white;
-
-}
-
-.light-mode {
-    background-color: white;
-    color: black;
-
-body.bodytheme.dark-mode {
-    background-color: black;
-    color: white;
-}
-
-body.bodytheme.light-mode {
-    background-color: white;
-    color: black;
-}
-ul {
- background-color: white;   
-}
-li a {
-    color: black;
-}
-h1 {
-    color: white;
-}
