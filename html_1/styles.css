@@ -1,76 +1,60 @@
-h1 {
-    color:black;
-    font-size: 56px;
-}
+/* General Styles */
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black; /* Set background to black */
+    color: white; /* Set text color to white */
 }
+
+h1 {
+    font-size: 56px;
+    margin-left: 20px;
+    font-family: monospace;
+}
+
 ul {
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white; /* Ensure nav background matches body */
     font-family: monospace;
     font-size: x-large;
-    width: 100%;
-    right: 0;
-    left: 0;
-    display: flex;            /* Use flexbox */
-    justify-content: center;  /* Center the items */
-    align-items: center;      /* Center items vertically */
-    height: 100%;             /* Ensure the height of ul matches nav */
-    width: 100%;
+}
 
- }
- nav{
-    margin: 0;
-    width: 100;
-    right: 0;
-    left: 0;
-
- }
-  
 li {
     float: left;
 }
-  
+
 li a {
     display: block;
-    color: white;   
     text-align: center;
     padding: 20px 20px;
     text-decoration: none;
+    color: black; /* Link color should be white */
 }
-  
-  /* Change the link color to green on hover */
-li a:hover {
-    background-color: darkgray;
-}
-body {
-    background-color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+li a:hover {
+    background-color: darkgray; /* Change hover color */
 }
+
 img {
     height: 700px;
     width: 1424px;
-    margin: 0 auto; /* Center horizontally */
+    margin: 0 auto;
     padding: 0;
-    display: block; /* Ensures the margin auto works */
+    display: block;
 }
-h1 {
-    margin-left: 20px;
-    font-family: monospace;
-}
-h2 {
-    margin-left: 20px;
-    font-family: monospace;
-}
+
 main {
     margin-left: 20px;
 }
+
 .home-icon {
     height: 40px; 
     width: 40px;  
@@ -86,6 +70,7 @@ main {
     height: 300px;
     margin: 10px;
     perspective: 1000px;
+    position: relative;
 }
 
 .flashcard .front, .flashcard .back {
@@ -96,7 +81,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #000;
+    border: 1px solid #fbf8f8;
     border-radius: 10px;
     transition: transform 0.6s;
 }
@@ -113,37 +98,4 @@ main {
     transform: rotateY(0);
 }
 
-/* Theme switch */
-body {
-    background-color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
-.dark-mode {
-    background-color: black;
-    color: white;
-
-}
-
-.light-mode {
-    background-color: white;
-    color: black;
-
-body.bodytheme.dark-mode {
-    background-color: black;
-    color: white;
-}
-
-body.bodytheme.light-mode {
-    background-color: white;
-    color: black;
-}
-ul {
- background-color: white;   
-}
-li a {
-    color: black;
-}
-h1 {
-    color: white;
-}

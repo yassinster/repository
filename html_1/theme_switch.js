@@ -1,4 +1,4 @@
-
+console.log("theme_switch.js loaded");
 
 let firstname = 'yassin';
 console.log(firstname);
@@ -53,27 +53,3 @@ document.querySelectorAll('.flashcard').forEach(flashcard => {
 });
 
 
-
-/* Theme toggle switch */
-document.addEventListener("DOMContentLoaded", function() {
-    const toggleSwitch = document.getElementById('mode-toggle');
-    const body = document.body;
-
-    // Initialize the theme based on saved preference or default to light mode
-    const savedTheme = localStorage.getItem('theme') || 'dark-mode';
-    body.classList.add(savedTheme);
-    toggleSwitch.checked = savedTheme === 'dark-mode';
-
-    // Event listener for the toggle switch
-    toggleSwitch.addEventListener('change', function() {
-        if (this.checked) {
-            body.classList.remove('light-mode');
-            body.classList.add('dark-mode');
-            localStorage.setItem('theme', 'dark-mode');
-        } else {
-            body.classList.remove('dark-mode');
-            body.classList.add('light-mode');
-            localStorage.setItem('theme', 'light-mode');
-        }
-    });
-});
